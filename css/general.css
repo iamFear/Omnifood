@@ -24,10 +24,11 @@ PARAGRAPH DEFAULT: 1.6
 --- 02 COLORS
 
 - PRIMARY: #e67e22
-- TINTS: #fdf2e9
+- TINTS: #fdf2e9 #fae5d3
 - SHADES: #cf711f
 - ACCENTS: 
 - GREYS: #555 #333
+#6F6F6F lightest gray allowed on #fdf2e9
 
 --- 05 SHADOWS
 
