@@ -25,7 +25,7 @@ PARAGRAPH DEFAULT: 1.6
 
 - PRIMARY: #e67e22
 - TINTS: #fdf2e9 #fae5d3 #eb984e
-- SHADES: #cf711f
+- SHADES: #cf711f #45260a
 - ACCENTS: 
 - GREYS: #555 #333
 #6F6F6F lightest gray allowed on #fdf2e9
@@ -101,6 +101,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -109,8 +110,23 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   /* transition: background-color 0.3s; */
   transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .btn--full:link,
@@ -213,6 +229,16 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+}
+
+/* THIS PROPERTY AND PSEUDO ELEMENT ARE USED TO STYLE THE FOCUS STATE OF THE ELEMENTS */
+*:focus {
+  outline: none;
+  /* FOR TERMS OF ACCESIBILTY, NEVER LET THE FOCUS STATE EXIST WITHOUT ANY DISTINCTION */
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
