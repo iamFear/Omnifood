@@ -15,6 +15,7 @@ BOLD: 700
 DEFAULT: 1
 SMALL: 1.05
 MEDIUM: 1.2
+LARGE: 1.8
 PARAGRAPH DEFAULT: 1.6
 
 - LETTER-SPACING:
@@ -234,6 +235,7 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 /* THIS PROPERTY AND PSEUDO ELEMENT ARE USED TO STYLE THE FOCUS STATE OF THE ELEMENTS */
