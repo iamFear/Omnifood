@@ -110,6 +110,101 @@ TO CALCULATE IT, YOU CAN DIVIDE THE VALUE ON PIXELS BETWEEN 16, AND WITH THAT YO
   .btn--form {
     margin-top: 1.2rem;
   }
+
+  /* MOBILE NAV */
+
+  .button-mobile-nav {
+    display: inline-block;
+  }
+
+  /* MAKING THE NAV VISIBLE AGAIN */
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: inline-block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.904);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* HIDE NAV */
+    /* NO TRANSITIONS ALLOWED WHILE USING DISPLAY NONE */
+    /* display: none; */
+
+    /* HOW TO HIDE AN ELEMENT WITHOUT DISPLAY:NONE */
+    /* 1) HIDE IT VISUALLY */
+    opacity: 0;
+    /* 2) MAKE IT INACCESSIBLE TO MOUSE AND KEYBOARD*/
+    pointer-events: none;
+    /* 3) HIDE IT FROM SCREEN READERS */
+    visibility: hidden;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* ACTIVE BELOW 704PX (SMALLER TABLETS) */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .address-col,
+  .logo-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
 }
 
 /* - FONT SIZE SYSTEM (px)
