@@ -115,6 +115,7 @@ TO CALCULATE IT, YOU CAN DIVIDE THE VALUE ON PIXELS BETWEEN 16, AND WITH THAT YO
 
   .button-mobile-nav {
     display: inline-block;
+    z-index: 1000;
   }
 
   /* MAKING THE NAV VISIBLE AGAIN */
