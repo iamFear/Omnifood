@@ -28,7 +28,7 @@ copyYear.textContent = currentDate;
 const header = document.querySelector(".header");
 const navBtn = document.querySelector(".button-mobile-nav");
 
-navBtn.addEventListener("click", function () {
+navBtn.addEventListener("click", () => {
   header.classList.toggle("nav-open");
 });
 
