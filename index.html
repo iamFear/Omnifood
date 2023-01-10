@@ -87,11 +87,22 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
-              class="hero-img"
-              alt="Something went wrong"
-            />
+            <picture>
+              <source
+                srcset="/img/compress-img/hero-optimized.webp"
+                type="image/webp"
+              />
+              <source
+                srcset="/img/compress-img/hero-min.png"
+                type="image/png"
+              />
+
+              <img
+                src="img/compress-img/hero-min.png"
+                class="hero-img"
+                alt="Food and girl enjoying food pictures"
+              />
+            </picture>
           </div>
         </div>
       </section>
